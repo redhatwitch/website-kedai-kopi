@@ -80,3 +80,57 @@ body {
 .navbar .navbar-extra a:hover {
   color: var(--primary);
 }
+
+#hamburger-menu {
+  display: none;
+}
+
+/* Media queries */
+
+/* laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 30rem;
+    height: 100vh;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .tombol {
+    height: 500px;
+    width: 500px;
+    margin: 200px;
+  }
+
+  .btn {
+    cursor: pointer;
+  }
+}
+
+/* mobile phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
